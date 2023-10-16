@@ -1,7 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json.
 {
     "name": "Scala",
-    "image": "sbtscala/scala-sbt:eclipse-temurin-17.0.4_1.8.0_3.2.1",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/java:1-11-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+        "ghcr.io/ebaskoro/devcontainer-features/scala:1": {
+            "installSbt": "true"
+        }
+    },
     "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind" ],
     // Configure tool-specific properties.
     "customizations": {
