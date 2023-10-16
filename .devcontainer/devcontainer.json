@@ -2,7 +2,7 @@
 {
     "name": "Scala",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "dockerComposeFile": "docker-compose.yaml",
+    "dockerComposeFile": ["docker-compose.yaml", "docker-compose-mongpdb.yml"],
   	"service": "devcontainer",
     "features": {
         "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
