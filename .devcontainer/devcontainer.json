@@ -2,7 +2,8 @@
 {
     "name": "Scala",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "image": "mcr.microsoft.com/devcontainers/java:1-11-bullseye",
+    "dockerComposeFile": "docker-compose.yaml",
+  	"service": "devcontainer",
     "features": {
         "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
         "ghcr.io/ebaskoro/devcontainer-features/scala:1": {
@@ -31,6 +32,6 @@
     // Comment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
     "remoteUser": "sbtuser" ,
     //"workspaceMount": "source=c:/dvcs/fpinscala,target=/workspace,type=bind",
-    "workspaceMount": "source=c:/dvcs/pokeapp,target=/workspace,type=bind",
+   // "workspaceMount": "source=c:/dvcs/pokeapp,target=/workspace,type=bind",
     "workspaceFolder": "/workspace"
 }
