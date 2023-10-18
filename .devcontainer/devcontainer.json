@@ -20,18 +20,8 @@
                 "alssys.interactive-scala"
             ]
         }
-    },
-    
-    #"postCreateCommand": curl -sSLf https://virtuslab.github.io/scala-cli-packages/scala-setup.sh | sh
-    
-    // Use this environment variable if you need to bind mount your local source code into a new container.
-//    "remoteEnv": {
-//        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
-//    },
-
+    },    
     // Comment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-    "remoteUser": "sbtuser" ,
-    //"workspaceMount": "source=c:/dvcs/fpinscala,target=/workspace,type=bind",
-   // "workspaceMount": "source=c:/dvcs/pokeapp,target=/workspace,type=bind",
+    "remoteUser": "vscode" ,
     "workspaceFolder": "/workspace"
 }
